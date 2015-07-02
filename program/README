@@ -1,0 +1,33 @@
+Hello World Program
+
+hello.c is the C source file containing the source code.
+hello is the binary file or executable.
+
+.c files are text files so you can use 'cat'
+
+Binary files are in machines langauge 0's and 1's.
+You can run cat on hello but it will display nonsense.
+To run a binary or executable, we use ./ when we are in the same directory.
+
+If we are in program/ directory we run:
+	./hello
+Otherwise we just need the path, for instance:
+	~/commandline_2/program/hello
+
+
+Technical nonsense
+Why do we need ./ and can't run hello?
+
+When we execute a command, the shell looks inside /usr/bin(in your $PATH)
+for that command. So running ls works because it is found in /usr/bin/ls.
+The issue is if we have a binary/executable also called ls in our
+current directory, which one will actually run? It turns out it will only look 
+for the one in /usr/bin.
+
+If we run 'hello' since its not in /usr/bin it will respond
+'bash: hello: command not found' and it won't bother looking for it in your
+current directory. To run 'hello' we must specify where it is located.
+Recall '.' refers to the current directory, so running './hello' means
+run the hello program found in my current directory.
+
+

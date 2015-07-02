@@ -1,0 +1,43 @@
+Commandline 2 Exercises
+
+echo
+
+1. What does 'echo' do?
+2. Run this in your terminal:
+	echo 'Hello World'
+3. Display your favorite color
+4. Do it again but do not output the trailing newline this time
+
+wc
+
+1. What does 'wc' do?
+2. This is an output of wc: 1151   10059   76914
+   What do each of the numbers mean?
+3. How many lines does freegeek.txt have?
+4. What is the length of the longest line in freegeek.txt?
+
+
+head tail
+
+1. What's the difference between the 'head' and 'tail' commands?
+2. Run 'cat' on freegeek.txt
+3. Now run 'head' on freegeek.txt
+4. Now run 'tail' on freegeek.txt
+5. Run 'head' on freegeek.txt but output 15 lines
+6. Run 'tail' on freegeek.txt but output 24 bytes
+
+less/more
+
+1. What's the difference between the 'less' and 'more' commands?
+2. Now run 'less' on freegeek.txt
+3. Now run 'more' on freegeek.txt
+
+grep
+
+1. What does 'grep' do?
+2. A common use of 'grep' is to search text for specific words (strings).
+   What is the correct usage of 'grep' so that we find the line with the
+   word "Facebook" in freegeek.txt.
+3. Find all lines with the word "volunteer"
+4. Find all lines without the word "volunteer"
+5. How much of a discount do voluteers receive at the Thrift Store?

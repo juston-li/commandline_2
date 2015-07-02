@@ -1,0 +1,24 @@
+Redirect
+
+command > text_file
+output of command redirected to file
+
+echo '1' > config
+output of echo '0' is 
+1
+so config now config now contains 1.
+This overwrites what was previously on config.
+If config didn't exit, it will create the file.
+
+If you don't want to overwrite, use '>>' to append
+echo '2' >> config
+
+
+Helpful hint.
+This may come up configuring a system if you don't have write permissions
+to a file like root_config, echo doesn't work, even if you 'sudo echo' (Why?)
+
+If you are sure you want to modify the file use this:
+	echo '1' | sudo tee root_config
+Remember use man for commands you don't know.
+ 
