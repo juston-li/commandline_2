@@ -1,0 +1,131 @@
+Free Geek Command Line 2 Class
+
+	Intro
+	Review
+	Man Pages and Help
+	Exercises
+	Redirection
+	Piping
+	Scripting
+	Package Management
+	Permissions
+
+*********
+* Intro *
+*********
+This class builds on concepts from Command Line 1 such as viewing, navigating
+through the Linux virtual filesystem using pwd, cd, ls. Using documentation
+found on Linux we will learn new commands. We will also cover basic piping,
+redirection and scripting. Depending on time we may also cover package
+management and file permissions.
+
+**********
+* Review *
+**********
+ * Commands normally follow the format 'command options target'
+
+ * pwd - prints the current directory you are in
+
+ * ls - lists directory contents
+
+ * cd - changes the directory to the specified path
+   There are 2 types of paths: absolute and relative.
+
+    Absolute paths begin with root directory '/' working its way to the
+    target file or directory. For example /usr/bin/gcc. Your current
+    directory doesn't matter when using absolute paths. 'cd /usr/bin' works
+    the same whether you are in your home directory or in
+     /this/is/an/example/directory.
+
+    Relative paths use your current directory as a "starting point." They
+    do not include a '/' in the front, instead they start with directories
+    in your current directory. So if you are in your home directory, you
+    navigate to the Music directory with 'cd Music' This only works when
+    there is a Music directory in your current directory so relative paths
+    are entirely dependent on your current directory.
+
+    Other helpful tips:
+    'cd ..' go back up a directory.
+    '~' is a shortcut for home directory, for example cd ~/Music
+    One of the above is absolute and the other relative.
+
+ * cp - copies file or directory, usage 'cp target destination'
+
+ * mv - moves file or directory
+
+ * cat - prints out contents of a file
+
+**********************
+* Man Pages and Help *
+**********************
+ * man is a reference manual for all things Linux
+
+ * Usage is 'man section_number page' For our usage the default section commands
+   so we run 'man command' for example 'man ls' or even 'man man'
+
+ * The pages provide information on what the command does, usage and options.
+
+ * We can also use 'command --help' for options. 'ls --help'
+
+*************
+* Exercises *
+*************
+ * Using man pages and --help work on exercises.txt to learn new commands.
+
+***************
+* Redirection *
+***************
+ * '>' symbol is used to redirect output to a file
+
+ * 'ls > file.txt' Instead of displaying on the terminal the list of directory
+   contents it will be written in file.txt
+
+ * This is good when you want to store the output, as any output on terminal
+   is temporary. It won't be there when you close and open the terminal and
+   the command you ran might not give the same output.
+
+ * It will overwrite and replace anything in the file it's redirecting to.
+
+ * It will create a new file.
+
+ * Use '>>' add on to the end instead of overwrite the file.
+
+********
+* Pipe *
+********
+ * '|' symbol is used to pipe output to another program.
+
+ * 'ls | wc' The output of ls is now used as input for wc. So wc will now count
+   the lines, words and chars of ls output.
+
+ * 'ls | grep freegeek' searches the output for ls for the work freegeek. So it
+   is searching your current directory for a file or directory called freegeek.
+
+**********************
+* Package Management *
+**********************
+ * Package Managers are tools used to install, update and remove programs.
+
+ * Linux Mint and Ubuntu are based on the the Debian distribution which uses
+   APT for package management.
+
+ * The main command is 'apt-get' with options to update, upgrade, install and
+   remove
+	'apt-get update' updates your list of packages from your sources.
+	Run before your upgrade.
+	
+	'apt-get upgrade' upgrades your packages to the newest version.
+
+	'apt-get install package_name' installs package_name to your
+	system.
+	
+	'apt-get remove package_name' removes package_name from your
+	system.
+
+ * Since we are modifying system files you need to use 'sudo'
+
+***************
+* Permissions *
+***************
+ * TODO
+
